@@ -1,12 +1,219 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class ="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+  <body class ="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="img/logotype-pink.svg" width="74" height="23" alt="Приложение Пинк">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a href="catalog.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Сайт приложения Пинк</h1>
+      <section class="download">
+        <div class="download__wrapper">
+          <h2 class="visually-hidden">Скачать приложение Пинк</h2>
+          <p class="download__slogan">Взгляните на жизнь иначе!</p>
+          <a class="download__button download__button--active" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
+          <ul class="download__list">
+            <li class="download__item">
+              <a class="download__item-logo" href="https://www.apple.com/ru/app-store/">
+                <img src="img/apple-logo.svg" width="47" height="56" alt="Скачать из App Store">
+              </a>
+            </li>
+            <li class="download__item">
+              <a class="download__item-logo" href="https://play.google.com/store">
+                <img src="img/android-logo.svg" width="43" height="47" alt="Скачать из Google Play">
+              </a>
+            </li>
+            <li class="download__item">
+              <a class="download__item-logo" href="https://www.microsoft.com/ru-ru/store/">
+                <img src="img/microsoft-logo.svg" width="44" height="41" alt="Скачать из Microsoft Store">
+              </a>
+            </li>
+          </ul>
+          <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
+      <section class="features">
+        <div class="features__wrapper">
+          <h2 class="visually-hidden">Особенности приложения Пинк</h2>
+          <div class="features__intro-wrapper">
+            <p class="features__intro">Устали от серости мегаполиса?</p>
+            <p class="features__intro">Нам есть, что вам предложить!</p>
+          </div>
+          <ul class="features__list">
+            <li class="features__item">
+              <img class="features__image" src="img/iphone1.svg" width="186" height="382" alt="Фотография экрана iPhone">
+              <h3 class="features__title">Поднимает настроение</h3>
+              <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="features__item">
+              <img class="features__image" src="img/iphone2.svg" width="186" height="382" alt="Фотография экрана iPhone">
+              <h3 class="features__title">Меняет мир вокруг</h3>
+              <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="features__item">
+              <img class="features__image" src="img/iphone3.svg" width="186" height="382" alt="Фотография экрана iPhone">
+              <h3 class="features__title">Заводит новых друзей</h3>
+              <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="information">
+        <div class="information__wrapper">
+          <h2 class="visually-hidden">Информация о приложении Пинк</h2>
+          <p class="information__title">Эффект на 24 часа!</p>
+          <p class="information__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="information__link" href="#">Узнать больше об исследовании</a>
+        </div>
+      </section>
+      <section class="review">
+        <div class="review__wrapper slider">
+          <h2 class="visually-hidden">Отзывы о приложении Пинк</h2>
+          <div class="review__list slider__list">
+            <blockquote class="review__item slider__item">
+              <p class="review__autor-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <p class="review__autor-name">Николай Петров</p>
+              <p class="review__autor-info">25 лет, водитель трамвая</p>
+            </blockquote>
+          </div>
+          <button class="review__toggle-prev" type="button"></button>
+          <button class="review__toggle-next" type="button"></button>
+          <div class="review__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--current" type="button"></button>
+            <button class="slider__toggle" type="button"></button>
+            <button class="slider__toggle" type="button"></button>
+          </div>
+        </div>
+      </section>
+      <section class="price">
+        <div class="price__wrapper slider">
+          <h2 class="visually-hidden">Купить приложение Пинк</h2>
+          <div class="price__slider">
+            <table class="price__table">
+              <tr class="price__table-column">
+                <td class="price__table-row"></td>
+                <td class="price__table-row">
+                  <p class="price__table-title">База</p>
+                  <p class="price__table-cost">1,99 USD</p>
+                </td>
+                <td class="price__table-row price__table-row--current">
+                  <p class="price__table-title">Стандарт</p>
+                  <p class="price__table-cost">3,99 USD</p>
+                </td>
+                <td class="price__table-row">
+                  <p class="price__table-title">Анлим</p>
+                  <p class="price__table-cost">9,99 USD</p>
+                </td>
+              </tr>
+              <tr class="price__table-column">
+                <td class="price__table-row">Розовый фильтр</td>
+                <td class="price__table-row"></td>
+                <td class="price__table-row"></td>
+                <td class="price__table-row"></td>
+              </tr>
+              <tr class="price__table-column">
+                <td class="price__table-row">Смайлики</td>
+                <td class="price__table-row"></td>
+                <td class="price__table-row"></td>
+                <td class="price__table-row"></td>
+              </tr>
+              <tr class="price__table-column">
+                <td class="price__table-row">Комментарии</td>
+                <td class="price__table-row"></td>
+                <td class="price__table-row"></td>
+                <td class="price__table-row"></td>
+              </tr>
+            </table>
+            <div class="price__toggles slider__toggles">
+              <button class="slider__toggle slider__toggle--current" type="button"></button>
+              <button class="slider__toggle" type="button"></button>
+              <button class="slider__toggle" type="button"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="visually-hidden">Контакты</h2>
+          <div class="contacts__intro-wrapper">
+            <p class="contacts__intro">Остались вопросы?</p>
+            <p class="contacts__intro">Свяжитесь с нами!</p>
+          </div>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__title">Звоните:</p>
+              <p class="contacts__info"><a class="contacts__info-link" href="tel:+78125556666">+7 (812) 555-66-66</a></p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__title">Пишите:</p>
+              <p class="contacts__info"><a class="contacts__info-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__title">Приезжайте в гости:</p>
+              <p class="contacts__info">ул. Большая Конюшенная, 19/8</p>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002965!2d30.320858715898996!3d59.9387191690544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1606524041252!5m2!1sru!2sru" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </section>
+      <footer class="page-footer">
+        <div class="page-footer__wrapper">
+          <div class="page-footer__logo page-footer__logo--active">
+            <a><img src="img/logotype-pink.svg" width="74" height="23" alt="Приложение Пинк"></a>
+          </div>
+          <ul class="page-footer__social-list">
+            <li class="page-footer__social-item page-footer__social-item--active">
+              <a class="page-footer__social-link" href="https://twitter.com/" title="Twitter">
+                <img src="img/logotype-twitter.svg" width="48" height="48" alt="Twitter">
+              </a>
+            </li>
+            <li class="page-footer__social-item page-footer__social-item--active">
+              <a class="page-footer__social-link" href="https://ru-ru.facebook.com/" title="Facebook">
+                <img src="img/logotype-facebook.svg" width="48" height="48" alt="Facebook">
+              </a>
+            </li>
+            <li class="page-footer__social-item page-footer__social-item--active">
+              <a class="page-footer__social-link" href="https://www.youtube.com/" title="Youtube">
+                <img src="img/logotype-youtube.svg" width="48" height="48" alt="Youtube">
+              </a>
+            </li>
+          </ul>
+          <div class="page-footer__copyright">
+            <p class="page-footer__copyright-info">Разработано</p>
+            <a class="page-footer__copyright-logo page-footer__copyright-logo--active" href="https://htmlacademy.ru/intensive/adaptive" title="HTML Academy">
+              <img src="img/logotype-copyright.svg" width="27" height="34" alt="HTML Academy">
+            </a>
+          </div>
+        </div>
+      </footer>
+    </main>
   </body>
 </html>
